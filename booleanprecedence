@@ -1,0 +1,71 @@
+"""
+Operator precedence is an extension of the mathematical idea of order of operations.
+
+Parenthesis
+Exponents
+Multiplication
+Division
+Addition
+Subtraction
+Comparison Operators
+Boolean 'NOT'
+Boolean 'AND'
+Boolean 'OR'
+
+                                # the below code shows that '==' has higher precedence than 'or'
+print(False == False or True)
+    #True
+print(False == (False or True))
+    #False
+print((False == False) or True)
+    #True
+"""
+
+
+
+
+
+
+
+
+x = 4
+y = 2
+if not 1 + 1 == y or x == 4 and 7 == 8:
+    print("Yes.")
+elif x > y:
+    print("No.")
+
+
+"""
+x = 4
+y = 2
+if not 1 + 1 == y or x == 4 and 7 == 8
+
+Step 1: Addition
+
+              not 1 + 1 == y or x == 4 and 7 == 8
+
+              (1 + 1 = 2)
+
+              not 2 == y or x == 4 and 7 == 8
+
+Step 2: Boolean 'AND'
+
+                 not 2 == y or x == 4 and 7 == 8
+
+                 (False because 7 does not equal 8)
+
+                 not 2 == y or False
+
+Step 3: Boolean 'OR'
+
+                 not 2 == y or False
+
+                 (True because y = 2)
+
+Step 4: Boolean 'NOT'
+
+                not True
+
+                not True = False
+"""
