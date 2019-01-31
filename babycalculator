@@ -1,5 +1,5 @@
 while True:
-   print("What Do You Want To Do Today?:")
+   print("What Do You Want To Calculate Today?:")
    print("Enter 'add' to add two numbers")
    print("Enter 'subtract' to subtract two numbers")
    print("Enter 'multiply' to multiply two numbers")
